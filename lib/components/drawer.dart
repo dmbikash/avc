@@ -39,7 +39,8 @@ class _CustomDrawerState extends State<CustomDrawer> {
                       width: double.maxFinite,
                       margin: const EdgeInsets.only(top: 50, bottom: 10),
                       padding: const EdgeInsets.only(top: 30, bottom: 30),
-                      child: Image.asset("asset/logo/care_logo.png"),
+                      //child: Image.asset("asset/logo/care_logo.png"),
+                      child: FlutterLogo(size: 50,),
                     ),
                   ),
                   Align(
@@ -72,7 +73,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 ],
               ),
             ),
-            const Text("Developped By\nCatch Bangladesh-EasySense", textAlign: TextAlign.center,),
+            const Text("Developped By\nCatch Bangladesh", textAlign: TextAlign.center,),
             if(false)Padding(
               padding: const EdgeInsets.all(8.0),
               child: ThemeButton.expandedButton(
