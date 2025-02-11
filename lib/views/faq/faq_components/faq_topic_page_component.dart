@@ -63,7 +63,7 @@ class TopicBar extends StatelessWidget {
       borderRadius: BorderRadius.circular(30),
       child: AnimatedContainer(
         curve: Curves.easeInOut,
-        duration: const Duration(milliseconds: 250),
+        duration: const Duration(milliseconds: 0),
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         decoration: BoxDecoration(
           gradient: isSelected
