@@ -1,4 +1,5 @@
 
+import 'package:avc/components/logo_list.dart';
 import 'package:flutter/material.dart';
 
 import '../theme/colors.dart';
@@ -19,7 +20,7 @@ class PrimaryAppBar extends StatelessWidget implements PreferredSizeWidget {
     required this.title,
     // required this.onMenuTap,
     this.actions,
-    this.backgroundColor = ThemeColor.orange,
+    this.backgroundColor = ThemeColor.primary,
     this.backButton = true,
   });
 
@@ -51,6 +52,59 @@ class PrimaryAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       // actions: actions?? [],
       backgroundColor: backgroundColor,
+
+    );
+  }
+}
+
+
+class LogoAppBar extends StatelessWidget implements PreferredSizeWidget {
+  final String title;
+  final bool backButton;
+  final Color backgroundColor;
+  final Color textColor = Colors.black;
+
+  // final VoidCallback onMenuTap ;
+
+  final actions;
+
+  LogoAppBar({
+    super.key,
+    required this.title,
+    // required this.onMenuTap,
+    this.actions,
+    this.backgroundColor = ThemeColor.primary,
+    this.backButton = true,
+  });
+
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
+  @override
+  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      elevation: 0,
+      centerTitle: true,
+      leading: InkWell(
+          onTap: () {
+            if (backButton) {
+              Navigator.pop(context);
+            } else {
+              Scaffold.of(context).openDrawer();
+            }
+          },
+
+          //child: Image.asset("asset/appbar/backButton.png"),
+          child: backButton ? const Icon(Icons.arrow_back_ios_new_sharp, color: ThemeColor.backGroundColor,) : const Icon(Icons.menu, color: ThemeColor.backGroundColor,)),
+      title: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 20),
+        child: LogoList(),
+      ),
+      // actions: actions?? [],
+      backgroundColor: backgroundColor,
+
     );
   }
 }

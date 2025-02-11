@@ -35,7 +35,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 //    alignment: Alignment.centerLeft,
                     alignment: Alignment.centerLeft,
                     child: Container(
-                      color: ThemeColor.orange,
+                      color: ThemeColor.primary,
                       width: double.maxFinite,
                       margin: const EdgeInsets.only(top: 50, bottom: 10),
                       padding: const EdgeInsets.only(top: 30, bottom: 30),

@@ -30,7 +30,7 @@ Widget menuItem(
             if (useIcon)
               Icon(
                 icon,
-                color: isClicked ? ThemeColor.orange : ThemeColor.orange,
+                color: isClicked ? ThemeColor.primary : ThemeColor.primary,
                 //  size: iconSize,
               ),
             if (!useIcon)
@@ -48,7 +48,7 @@ Widget menuItem(
                   // padding: const EdgeInsets.all(8.0),
                   child: Text(
                     name,
-                    style: isClicked ? ThemeTextStyles.label.copyWith(color: ThemeColor.orange) : ThemeTextStyles.normalTitle,
+                    style: isClicked ? ThemeTextStyles.label.copyWith(color: ThemeColor.primary) : ThemeTextStyles.normalTitle,
                   ),
                 ),
               ),

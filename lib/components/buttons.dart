@@ -24,7 +24,7 @@ class ThemeButton {
   static Widget submitButton({
     required VoidCallback onPressed,
     name = "Submit",
-    color = ThemeColor.orange,
+    color = ThemeColor.primary,
     radius = 20.0,
     buttonTextColor = Colors.white,
   }) {
@@ -45,7 +45,7 @@ class ThemeButton {
   static Widget expandedButton({
     required VoidCallback onPressed,
     name = "Submit",
-    color = ThemeColor.orange,
+    color = ThemeColor.primary,
     radius = 20.0,
     buttonTextColor = Colors.white,
   }) {

@@ -7,18 +7,21 @@ class ThemeColor {
 
 
   //static const Color backGroundColor = Color(0xFFF6F6EE);
-  static const Color backGroundColor = Color(0xFFFFF8EC);
+  static const Color backGroundColor = Color(0xFFF6F6F6);
 
   //static const Color black = Color(0xFF000000);
   static const Color black = Color(0xFF1C1C30);
+  static const Color glueGrey = Color(0xFF232E3E);
+  static const Color grey = Color(0xFFF7F7F7);
   static const Color black54 = Colors.black54;
   static const Color white = Color(0xFFFFFFFF);
 
  // static const Color cyan = Color(0xFFACD1BF);
-  static const Color orange = Color(0xFFD27146);
+  static const Color primary = Color(0xFF1865B0);
+  static const Color secondary = Color(0xFFE7E9E9);
 
   //static const Color yellow = Color(0xFFE9DA73);
-  static const Color yellow = Color(0xFF1C1C30);
+  static const Color yellow = Colors.yellow;
 }
 
 class ThemeGradient {
