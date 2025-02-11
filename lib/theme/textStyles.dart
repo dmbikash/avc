@@ -14,7 +14,7 @@ class ThemeTextStyles{
   );
   static TextStyle splashScreen = const TextStyle(
     color: ThemeColor.white,
-    fontSize: 25,
+    fontSize: 40,
     fontWeight: FontWeight.bold,
   );
 

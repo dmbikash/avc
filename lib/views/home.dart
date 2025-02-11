@@ -1,5 +1,6 @@
 import 'package:avc/components/appbar.dart';
 import 'package:avc/theme/colors.dart';
+import 'package:avc/views/faq/faq_details.dart';
 import 'package:avc/views/faq/faq_topic_page.dart';
 import 'package:avc/views/video/video.dart';
 import 'package:flutter/material.dart';
@@ -65,13 +66,16 @@ class _HomeState extends State<Home> {
                             ),
 
                             Text(
-                                '''প্রাচীনকাল থেকেই এদেশে পঞ্চায়েত নামে যে সংস্থা প্রচলিত ছিল।তার অন্যতমপ্রধান দায়িত্ব ছিল স্থানীয় বিচার কার্য সম্পাদন ও ঝগড়া-বিবাদের   
-
-                            মীমাংসাকরা। বৃটিশরা যদিও প্রথমে এ দায়িত্ব স্থানীয় সংস্থার উপর অর্পন করেনিকিন্তু বিংশ শতাব্দীর প্রথম ভাগেই ১৯১৯ সালে বঙ্গীয় পল্লী স্বায়ওশাসন আইনেরমাধ্যামে ইউনিয়ন র্বোডকে দেওয়ানি ও ফৌজদারি উভয় প্রকার মামলার বিচার করারক্ষমতা দেওয়া হয় ।  '''
+                                '''প্রাচীনকাল থেকেই এদেশে পঞ্চায়েত নামে যে সংস্থা প্রচলিত ছিল।তার অন্যতমপ্রধান দায়িত্ব ছিল স্থানীয় বিচার কার্য সম্পাদন ও ঝগড়া-বিবাদের  মীমাংসাকরা। বৃটিশরা যদিও প্রথমে এ দায়িত্ব স্থানীয় সংস্থার উপর অর্পন করেনিকিন্তু বিংশ শতাব্দীর প্রথম ভাগেই ১৯১৯ সালে বঙ্গীয় পল্লী স্বায়ওশাসন আইনেরমাধ্যামে ইউনিয়ন র্বোডকে দেওয়ানি ও ফৌজদারি উভয় প্রকার মামলার বিচার করারক্ষমতা দেওয়া হয় ।  '''
                     ,style: TextStyle(),overflow: TextOverflow.ellipsis,maxLines:4,
 
                             ),
-                            InkWell(onTap: (){}, child: Text("Read More",style: ThemeTextStyles.keys.copyWith(color: ThemeColor.primary),),),
+                            InkWell(onTap: (){
+                              
+                              route(context, FAQDetails(
+                                  image: "asset/images/img.png",
+                                  question:  "গ্রাম্য আইন কি?", answer: '''প্রাচীনকাল থেকেই এদেশে পঞ্চায়েত নামে যে সংস্থা প্রচলিত ছিল।তার অন্যতমপ্রধান দায়িত্ব ছিল স্থানীয় বিচার কার্য সম্পাদন ও ঝগড়া-বিবাদের  মীমাংসাকরা। বৃটিশরা যদিও প্রথমে এ দায়িত্ব স্থানীয় সংস্থার উপর অর্পন করেনিকিন্তু বিংশ শতাব্দীর প্রথম ভাগেই ১৯১৯ সালে বঙ্গীয় পল্লী স্বায়ওশাসন আইনেরমাধ্যামে ইউনিয়ন র্বোডকে দেওয়ানি ও ফৌজদারি উভয় প্রকার মামলার বিচার করারক্ষমতা দেওয়া হয় ।  '''));
+                            }, child: Text("Read More",style: ThemeTextStyles.keys.copyWith(color: ThemeColor.primary),),),
                           ],
                         ),
 

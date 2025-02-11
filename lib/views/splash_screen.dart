@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     });
 
     Future.delayed(Duration(milliseconds: 2000), () {
-      route(context, widget.nextPage);
+      routeNoBack(context, widget.nextPage);
       // routeNamed(context, "Login");
       //checkToken();
     });
@@ -75,7 +75,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                 children: [
                   SizedBox(height: 100,),
                   LogoList(),
-                  SizedBox(height: 180,),
+                  SizedBox(height: 270,),
                   Text(
                     "আমার আইন",
                     textAlign: TextAlign.center,
